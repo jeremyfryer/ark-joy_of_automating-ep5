@@ -198,7 +198,7 @@ describe 'ark::default' do
 
     it "tar binary" do
       attribute = chef_run.node['ark']['tar']
-      expect(attribute).to eq '"\7-zip\7z.exe"'
+      expect(attribute).to eq '"C:\7-zip\7z.exe"'
     end
   end
 end
