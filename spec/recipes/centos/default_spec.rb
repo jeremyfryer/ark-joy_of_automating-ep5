@@ -8,10 +8,10 @@ describe 'ark::default' do
     end
 
     let(:packages) do
-      %w[ libtool autoconf unzip rsync make gcc xz-lzma-compat bzip2 tar ]
+      %w( libtool autoconf unzip rsync make gcc xz-lzma-compat bzip2 tar )
     end
 
-    #test for necessary packages
+    # test for necessary packages
     include_examples 'installs necessary packages'
   end
 end

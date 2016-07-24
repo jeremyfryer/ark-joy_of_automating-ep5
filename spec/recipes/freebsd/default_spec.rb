@@ -8,10 +8,10 @@ describe 'ark::default' do
     end
 
     let(:packages) do
-      %w[ libtool autoconf unzip rsync gmake gcc autogen gtar ]
+      %w( libtool autoconf unzip rsync gmake gcc autogen gtar )
     end
 
-    #test for necessary packages
+    # test for necessary packages
     include_examples 'installs necessary packages'
 
     it "tar binary" do
@@ -19,5 +19,4 @@ describe 'ark::default' do
       expect(attribute).to eq '/usr/bin/tar'
     end
   end
-
 end

@@ -5,10 +5,10 @@ describe 'ark::default' do
     include_context 'chef run'
 
     let(:packages) do
-      %w[ libtool autoconf unzip rsync make gcc autogen ]
+      %w( libtool autoconf unzip rsync make gcc autogen )
     end
 
-    #test for necessary packages
+    # test for necessary packages
     include_examples 'installs necessary packages'
 
     it "does not install the gcc-c++ package" do

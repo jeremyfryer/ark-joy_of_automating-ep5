@@ -4,7 +4,6 @@ require 'pry'
 
 at_exit { ChefSpec::Coverage.report! }
 
-
 shared_examples 'installs necessary packages' do
   it 'installs necessary packages' do
     packages.each do |package_name|
@@ -14,8 +13,6 @@ shared_examples 'installs necessary packages' do
 end
 
 shared_context 'chef run' do
-
-
   let(:chef_run) do
     runner = ChefSpec::SoloRunner.new(platform_details)
     runner.converge(described_recipe)
